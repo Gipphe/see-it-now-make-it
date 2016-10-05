@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	background-color: #ebebeb;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.main-image,
+.main-image img {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0 0 2% 0;
+	width: 100%;
+}
+.main-image .text {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 150%;
+	color: #fff;
+	text-shadow: 0 0 3px #000, 0 0 7px #000;
+}
+.main-image .text h1,
+.main-image .text h2 {
+	margin: 0;
+}
+.main-image .text h1 {
+	text-transform: uppercase;
+	letter-spacing: 15px;
+	font-size: 160%;
+}
+.main-image .text h2 {
+	font-size: 90%;
+}
+
+section,
+footer {
+	background-color: #fff;
+	box-sizing: border-box;
+	box-shadow: 6px 5px 10px #aaa;
+	margin: 2% auto;
+	padding: 1% 5%;
+	width: 60%;
+}
+section h1,
+section h2 {
+	font-size: 150%;
+	font-weight: bolder;
+	margin-bottom: 5px;
+	text-align: center;
+}
+section h2 {
+	color: #1867c1;
+	font-size: 100%;
+	font-style: italic;
+	margin-top: 0;
+}
+.actio img {
+	float: left;
+	margin: 16px 16px 16px 0;
+}
+#menu {
+	position: fixed;
+	right: 0;
+	top: 50%;
+}
