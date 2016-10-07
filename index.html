@@ -7,15 +7,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
-		<main class="main-image">
-			<img alt="Picture of the notorious rock Preikestolen, with a woman standing at the edge of the rock in a yoga tree pose" src="img/front-page.jpg">
+	<body id="body">
+		<div id="skip-button">
+			<a href="#the-problem">
+				<img alt="Image of a circled, tailless arrow pointing downwards" src="img/down-arrow.png">
+			</a>
+		</div>
+		<nav class="menu">
+			<div class="menu-hover-button">
+				<img alt="Image representing the drop-down menu" src="img/menu-icon.png">
+				Menu
+			</div>
+			<ul>
+				<a href="#main-image"><li>Back to top</li></a>
+				<a href="#the-problem"><li>The Problem</li>
+				<a hreF="#actio"><li>Actio+</li></a>
+				<a href="#basics"><li>Basics of Actio+</li></a>
+				<a href="#map"><li>Map</li></a>
+				<a href="#destinations"><li>Destinations</li></a>
+				<a href="#route"><li>Route and Day plan</li></a>
+				<a href="#missions"><li>Missions and Achievements</li></a>
+			</ul>
+		</nav>
+		<main class="main-image" id="main-image">
 			<div class="text">
 				<h1>Actio+</h1>
 				<h2>Activity and culture made fun!</h2>
 			</div>
 		</main>
-		<section class="the-problem">
+		<section id="the-problem">
 			<h1>The Problem</h1>
 			<p>
 				From a social perspective <a href="https://helsenorge.no/kosthold-og-ernaring/overvekt/overvekt-og-fedme">obesity</a> and <a href="http://www.ntnu.no/cerg/inaktivitet">inactivity</a> are extremely important problems that we need to address. We know that obesity increase the chance of a long list of diseases including some types of cancer and heart diseases. Furthermore; research shows that physically active people are healthier and happier. From only these two facts we can certainly say that more activity among people implies a better society.
@@ -24,11 +44,10 @@
 				There are many issues surrounding these problems. To mention a few; unhealthy diets, less physical work and misuse of technology. Tackling them all at once would be nearly impossible. Since we are a group of software engineering students we chose to tackle the last one. From our perspective we see that an important reason for today's increasing obesity and inactivity is technology. In some senses technology has become too good. In these days it is way too easy to find fun and entertainment without leaving the house. With the internet, games and all kinds of streaming services we don't have to strain ourselves in making things happen; they just do. This made us think. Our professor sometimes says "The solution might be a part of the problem" and in this case it is. Introducing our new mobile application Actio+!
 			</p>
 		</section>
-		<section class="actio">
+		<section id="actio">
 			<h1>Actio+</h1>
 			<h2>Innovative mobile gaming. Explore and experience your surroundings!</h2>
 			<img alt="Picture of a phone with 'Actio+' visible on the screen" src="img/phone1.jpg">
-			<figcaption>Click to expand</figcaption>
 			<p>
 				Imagine a real life game with real people, real things and real places. This is exactly what Actio+ is. By using the latest GPS technology Actio+ simulates a game with one goal for you and your friends: Activity.
 			</p>
@@ -39,7 +58,7 @@
 				Actio+ is much more than a competition as well. Let's say you and your friends or significant other are having one of those lazy Sunday afternoons. You want to do something, but you don't know what. With the Actio+ map everything fun and interesting to do around you is mapped in one place. You can even search and browse for cool things to see and do close to you. This allows people to just walk out the door without a plan, just packed with a smile and their phone.
 			</p>
 		</section>
-		<section class="basics">
+		<section id="basics">
 			<h1>Basics of Actio+</h1>
 			<h2>Experience real life and compete with your friends!</h2>
 			<p>
@@ -49,14 +68,14 @@
 				As said; the goal of Actio+ is experiencing most in real life. For every mountain you climb and every statue you visit, Actio+ is always there to award you. Although points are given automatically, you can of course open the app to see the gold pour into your hand. If there by any chance is an attraction or place you feel is Actio+ point worthy, a request can simply be sent to map the destination. Actio+ will also have plenty of missions and achievements to attack. Missions could be anything from "First man to climb Kolsåstoppen: receive 1000 points!" or "Go ski at Oslo winterpark: receive 500 points!". Achievements are generally like "Visit 10 museums: 2000 points!".
 			</p>
 		</section>
-		<section class="map">
+		<section id="map">
 			<h1>Map</h1>
 			<h2>Everything fun and interesting in one place!</h2>
 			<p>
 				The map is where everything happens in Actio+. It's where you find destinations, routes and day plans. The map interface is clean; without too many buttons and distractions. All the useful map-functions are available in the map-menu located at the bottom center. Navigation around the map is simply done by swiping. Zooming in and out is done by the regular zoom pinch motion. Pressing the destination icons opens a window containing general information including distance from you.
 			</p>
 		</section>
-		<section class="destinations">
+		<section id="destinations">
 			<h1>Destinations</h1>
 			<h2>Discover new places!</h2>
 			<p>
@@ -66,17 +85,18 @@
 				Visiting destinations of Actio+ Partners give more points than regular destinations. If you run a commercial sport business that sells tickets like a ski resort or a climbing facility we encourage you to become a certified Actio+ Partner. This might boost your ticket sale and visitor numbers.
 			</p>
 		</section>
-		<section class="route">
+		<section id="route">
 			<h1>Route and Day plan</h1>
 			<h2>Share your own routes and day plans with your friends!</h2>
 			<p>
+				<img alt="Phone showing the Actio+ application in use, displaying its routing feature" src="img/phone7.jpg">
 				You can plot an "Actio+ route". If you have a regular bike or jogging trip around the neighborhood you can simply press add "Actio+ route" at the start of your trip and Actio+ will plot the route and with it your average speed and total time. The route will appear on your profile so that your friends can try it out and compete for the best time.
 			</p>
 			<p>
 				Let's say you want to plan the activities for the next day. In the Actio+ map this is easily done by plotting a "day plan". Simply search and add the places you want to visit and a plan is made. Your weekend is all figured out in no time and you can simply send it to your friends for them to see.
 			</p>
 		</section>
-		<section class="missions">
+		<section id="missions">
 			<h1>Missions and Achievements</h1>
 			<h2>Rank up and collect more points!</h2>
 			<p>

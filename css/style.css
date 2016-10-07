@@ -1,15 +1,21 @@
 body {
 	margin: 0;
 	background-color: #ebebeb;
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: 'Calibri', sans-serif;
 }
 
-.main-image,
-.main-image img {
+.main-image {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0 0 2% 0;
 	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	box-shadow: 0 4px 8px #aaa;
+	background-size: cover;
+	background-image: url('../img/front-page.jpg');
+	background-blend-mode: solid;
+	background-position: center center;
 }
 .main-image .text {
 	position: absolute;
@@ -42,6 +48,19 @@ footer {
 	padding: 1% 5%;
 	width: 60%;
 }
+@media only screen and (max-width:1001px) {
+	section,
+	footer {
+		width: 80%;
+	}
+}
+section:after {
+  content: '';
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
 section h1,
 section h2 {
 	font-size: 150%;
@@ -55,12 +74,70 @@ section h2 {
 	font-style: italic;
 	margin-top: 0;
 }
-.actio img {
+section img {
 	float: left;
-	margin: 16px 16px 16px 0;
+	margin: 0 16px 16px 0;
 }
-#menu {
+footer {
+	font-size: 70%;
+	color: #222;
+	text-align: center;
+}
+#skip-button {
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	bottom: 2%;
+	width: 100%;
+}
+#skip-button img {
+	width: 70px;
+}
+
+.menu {
+	align-items: center;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 4px 0 0 4px;
+	box-shadow: 0 0 10px #000;
+	color: #ffc90a;
+	cursor: pointer;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	padding: 10px;
 	position: fixed;
 	right: 0;
 	top: 50%;
+	transform: translateY(-50%); /* center the menu vertically */
+	z-index: 1;
+}
+.menu .menu-hover-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row;
+}
+.menu img {
+	margin-right: 10px;
+	width: 40px;
+}
+.menu ul {
+	margin: 20px;
+	padding: 0;
+	display: none;
+	text-align: center;
+	list-style: none;
+}
+.menu ul li {
+	margin: 0;
+}
+.menu ul a,
+.menu ul a:hover,
+.menu ul a:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+.menu:hover ul {
+	display: block;
 }
