@@ -14,7 +14,6 @@ body {
 	box-shadow: 0 4px 8px #aaa;
 	background-size: cover;
 	background-image: url('../img/front-page.jpg');
-	background-blend-mode: solid;
 	background-position: center center;
 }
 .main-image .text {
@@ -27,7 +26,7 @@ body {
 	text-shadow: 0 0 3px #000, 0 0 7px #000;
 }
 .main-image .text h1,
-.main-image .text h2 {
+.main-image .text p {
 	margin: 0;
 }
 .main-image .text h1 {
@@ -62,13 +61,13 @@ section:after {
   clear: both;
 }
 section h1,
-section h2 {
+section .subtitle {
 	font-size: 150%;
 	font-weight: bolder;
 	margin-bottom: 5px;
 	text-align: center;
 }
-section h2 {
+section .subtitle {
 	color: #1867c1;
 	font-size: 100%;
 	font-style: italic;
